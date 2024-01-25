@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function valid()
+    {
+    var erm=" ";
+    var name=null;
+     name=document.getElementById('textname').value;
+     if(name=="")
+        erm="Name field is empty\n";
+
+     name=document.getElementById('FathersName').value;
+     if(name=="")
+        erm+=" Fathers Name field is empty\n";
+
+        name=document.getElementById('MothersName').value;
+     if(name=="")
+        erm+=" Mothers Name field is empty\n";
+
+        name=document.getElementById('dateofbirth').value;
+     if(name=="")
+        erm+=" DOB field is empty\n";
+
+        name=document.getElementById('contact number').value;
+     if(name=="")
+        erm+="contact number field is empty\n";
+
+        name=document.getElementById('E-mail').value;
+     if(name=="")
+        erm+="e-mail field is empty\n";
+
+        name=document.getElementById('address').value;
+     if(name=="")
+        erm+=" Address field is empty\n";
+
+    
+    if(emr!="")
+    {
+    alert(erm);
+    return false;
+    }
+
+else
+return true;
+    }
+
+    </script>
+</head>
+<body bgcolor="gray">
+    <h1><marquee><font color="white">Information Form</marquee></h1>
+<center>
+    Created by <br> Meherun sultana <br>
+    <a href="#">E-mail :meherun.sultana10@gmail.com</a><br>
+</center>
+<form id="f1" name="form1" onsubmit="return valida();" method="get">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td><input type="text" id="textname"></td>
+        </tr>
+        <tr>
+            <td>FathersName</td>
+            <td>:</td>
+            <td><input type="text" name="FathersName" id="FathersName"></td>
+        </tr>
+        <tr>
+            <td>mothersName</td>
+            <td>:</td>
+            <td><input type="text" name="MothersName" id="MothersName"></td>
+        </tr>
+        <tr>
+            <td>Date of birth</td>
+            <td>:</td>
+            <td><input type="text" name="date of birth" id="date of birth"></td>
+        </tr>
+        <tr>
+            <td>contact number</td>
+            <td>:</td>
+            <td><input type="text" name="contact number" id="contact number"></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td>:</td>
+            <td><input type="text" id="E-mail"></td>
+        </tr>
+        <tr>
+            <td>Religion</td>
+            <td>:</td>
+            <td><select name="rel" >
+                <option selected="selected">Select religion</option>
+                <option>Islam</option>
+                <option>Hindu</option>
+                <option>Buddo</option>
+                <option>Christian</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Marital Status</td>
+            <td>:</td>
+            <td><input type="radio" name="marital" value="Married">Married</td>
+            <td><input type="radio" name="marital" value="Unmarried">Unmarried</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="gender" id="gender">Male
+                <input type="radio" name="gender" id="gender">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>:</td>
+            <td><select name="country">
+                <option selected="selected" >Select Country</option>
+                <option>Bangladesh</option>
+                <option>India</option>
+                <option>Nepal</option>
+                <option>Pakistan</option>
+                <option>Sri Lanka</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Prasent Address</td><td>:</td>
+            <td colspan="4"><textarea cols="30" rows="4" id="address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Insert"></td>
+            <td><input type="submit" value="Delete"></td>
+            <td><input type="submit" value="Update"></td>
+        </tr>
+
+    </table>
+
+</form>
+    
+</body>
+</html>
